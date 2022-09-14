@@ -124,7 +124,7 @@ body.dark-theme {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 200px, 0);
   }
 }
 .preload-finish {
@@ -496,6 +496,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  align-items: center;
 }
 .skills__name {
   font-size: var(--normal-font);
@@ -518,6 +519,18 @@ img {
 }
 .skills__css {
   width: 70%;
+}
+.skills__number {
+}
+strong {
+  font-size: 1.8rem;
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #0012e4;
+}
+.icn {
+  color: #0012e4;
 }
 .skills__js {
   width: 50%;
@@ -774,21 +787,31 @@ img {
   color: var(--first);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .pro__icon {
-    animation: App-logo-spin infinite 20s linear;
-    font-size: 2rem;
-  }
+.pro__icon {
+  animation: App-logo-spin infinite 20s linear;
+  font-size: 2rem;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(3600deg);
   }
+} */
+
+/* .sklll__icon {
+  animation: App-logo infinite linear;
 }
+@keyframes App-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(3600deg);
+  }
+} */
 
 .project {
   text-align: center;
