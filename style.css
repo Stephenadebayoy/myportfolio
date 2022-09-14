@@ -931,6 +931,9 @@ media query */
   .project__img {
     width: 200px;
   }
+  .pro__img {
+    opacity: 0.5;
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -971,6 +974,9 @@ media query */
   }
   .portfolio__content {
     align-items: center;
+  }
+  .pro__img {
+    opacity: 0.5;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1114,6 +1120,7 @@ media query */
   }
   .pro__img {
     width: 70%;
+    opacity: 0.5;
   }
   .pro__content {
     display: flex;
