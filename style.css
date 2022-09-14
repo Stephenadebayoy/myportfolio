@@ -520,7 +520,17 @@ img {
 .skills__css {
   width: 70%;
 }
-.skills__number {
+.react {
+  animation: roun infinite 25s linear;
+  font-size: 3rem;
+}
+@keyframes roun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(4600deg);
+  }
 }
 strong {
   font-size: 1.8rem;
@@ -790,7 +800,7 @@ strong {
 
 .pro__icon {
   animation: App-logo-spin infinite 20s linear;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 @keyframes App-logo-spin {
