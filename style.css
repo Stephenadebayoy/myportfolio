@@ -531,6 +531,7 @@ strong {
 }
 .icn {
   color: #0012e4;
+  font-size: 2rem;
 }
 .skills__js {
   width: 50%;
@@ -792,17 +793,17 @@ strong {
   font-size: 2rem;
 }
 
-/* @keyframes App-logo-spin {
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(3600deg);
+    transform: rotate(4600deg);
   }
-} */
+}
 
-/* .sklll__icon {
-  animation: App-logo infinite linear;
+/* .uil-react {
+  animation: App-logo-spin infinite 20s linear;
 }
 @keyframes App-logo {
   from {
