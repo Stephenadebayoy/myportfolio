@@ -272,3 +272,42 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+// document.onreadystatechange = function () {
+//   if (document.readyState !== 'complete') {
+//     document.querySelector('body').style.visibility = 'hidden';
+
+//     document.querySelector('#loader').style.visibility = 'visible';
+//   } else {
+//     document.querySelector('#loader').style.display = 'none';
+
+//     document.querySelector('body').style.visibility = 'visible';
+//   }
+// };
+
+// window.addEventListener('load', () => {
+//   document.getElementById('loader').style.display = 'none';
+// });
+// function loaded() {
+//   if (document.readyState !== 'complete') {
+//     document.querySelector('body').style.visibility = 'hidden';
+
+//     document.querySelector('#loader').style.visibility = 'visible';
+//   } else {
+//     document.querySelector('#loader').style.display = 'none';
+
+//     document.querySelector('body').style.visibility = 'visible';
+//   }
+// }
+
+// $(function () {
+//   $('.center').fadeOut(2000, function () {
+//     $('.content').fadeIn(1000);
+//   });
+// });
+
+// var loader = document.getElementById('preloader');
+
+// window.addEventListener('load', function () {
+//   loader.style.display = 'none';
+// });

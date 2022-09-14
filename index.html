@@ -56,14 +56,17 @@
 }; -->
 
 </script>
-      </script>
+      <!-- </script>
     
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
           
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="nav container">
+       <div id="preloader" class="center">
+        <img src="./download (7).png" alt="" srcset="">
+       </div> 
+      <header class="header" id="header"> 
+       <nav class="nav container">
         <a href="#" class="nav__logo stroke-text">Stephanos</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
@@ -94,7 +97,7 @@
             </li>
             <li class="nav__items">
               <a href="#contact" class="nav_link">
-                <i class="uil uil-message nav__icon"></i>Contact 
+              <i class="uil uil-phone-alt nav__icon"></i>Contact 
               </a>
             </li>
           </ul>
@@ -758,6 +761,17 @@ qualification -->
         delay: 100,
         duration: 1000,
       });
+    </script>
+    <script>
+      var loader = document.getElementById('preloader');
+
+      window.addEventListener('load', function () {
+      loader.style.display = 'none';
+
+      setTimeout(function(){
+        loader.classList.add("preload-finish")
+      },2000)
+});
     </script>
     <script src="./scri.js"></script>
   </body>

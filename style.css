@@ -85,6 +85,51 @@ body.dark-theme {
   padding: 0;
   margin: 0;
 }
+/* #preloader {
+  border: 12px solid #f3f3f3;
+
+  border-radius: 50%;
+
+  border-top: 12px solid red;
+
+  width: 70px;
+
+  height: 70px;
+  background: #000;
+
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+.center > img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10rem;
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 150px, 0);
+  }
+}
+.preload-finish {
+  transition: 2.5s;
+}
 
 html {
   scroll-behavior: smooth;
