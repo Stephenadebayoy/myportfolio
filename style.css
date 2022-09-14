@@ -939,7 +939,7 @@ strong {
 .scrollup {
   position: fixed;
   right: 1rem;
-
+  scroll-behavior: smooth;
   background-color: var(--first);
   opacity: 0.8;
   padding: 0 0.3rem;
