@@ -1014,6 +1014,9 @@ media query */
   .pro__img {
     opacity: 0.5;
   }
+  .footer__links {
+    row-gap: 3rem;
+  }
 }
 
 @media screen and (min-width: 568px) {
@@ -1026,6 +1029,7 @@ media query */
   .home__img {
     order: 1;
     justify-self: center;
+
     margin-bottom: 12rem;
   }
 
