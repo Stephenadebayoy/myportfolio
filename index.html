@@ -727,16 +727,16 @@ qualification -->
          <span class="contact__subtitle">Lagos, Nigeria</span>
         </div>
     </div>
-    <form  action="" 
+    <form method="POST"  action="" 
    id="contact-form" class="contact__form grid">
       <div class="contact__inputs grid">
         <div class="contact__content">
           <label for="" class="contact__label">Full Name</label>
-          <input type="text" class="contact__input" name="user_name" id="name" required>
+          <input type="text" class="contact__input name" name="name" id="name" required>
         </div>
          <div class="contact__content">
           <label for="" class="contact__label">Email</label>
-          <input type="email" class="contact__input"  name="user_email" id="email" required>
+          <input type="email" class="contact__input email"  name="email" id="email" required>
         </div>
       </div>
        <!-- <div class="contact__content">
@@ -745,10 +745,10 @@ qualification -->
         </div> -->
          <div class="contact__content">
           <label for="" class="contact__label">Message</label>
-       <textarea name="message" cols="0" rows="7" class="contact__input"  name="user_message" id="message" required></textarea>
+       <textarea name="message" cols="0" rows="7" class="contact__input message"  name="message" id="message" required></textarea>
         </div>
         <div>
-          <button  href="" id="submit" class="button button--flex">Send Message <i class="uil uil-message button__icon"></i></button>
+          <button  href="" id="submit" class="button button--flex" type="submit">Send Message <i class="uil uil-message button__icon"></i></button>
         </div>
     </form>
   </div>
@@ -820,6 +820,7 @@ qualification -->
       // },5000)
 });
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scri.js"></script>
   </body>
 </html>

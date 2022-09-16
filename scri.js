@@ -311,29 +311,31 @@ allSections.forEach(function (section) {
 // window.addEventListener('load', function () {
 //   loader.style.display = 'none';
 // });
-// document.querySelector('.contact__form').addEventListener('submit', submitForm);
+document.querySelector('.contact__form').addEventListener('submit', submitForm);
 
-// function submitForm(e) {
-//   e.preventDefault();
+function submitForm(e) {
+  e.preventDefault();
 
-//   // Get input values
-//   let name = document.getElementById('name').value;
-//   let email = document.getElementById('email').value;
-//   let message = document.getElementById('message').value;
+  // Get input values
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+  let message = document.getElementById('message').value;
 
-//   saveContactInfo(name, email, message);
+  saveContactInfo(name, email, message);
 
-//   document.querySelector('.contact__form').reset();
-// }
+  document.querySelector('.contact__form').reset();
 
-// function sendEmail(name, email, message) {
-//   Email.send({
-//     Host: 'smtp.gmail.com',
-//     Username: 'stephenadebayo17@gmail.com',
-//     Password: 'steve1234567890S',
-//     To: 'stephenadebayo17@gmail.com',
-//     From: 'stephenadebayo17@gmail.com',
-//     Subject: `${name} sent you a message`,
-//     Body: `Name:${name} <br/> Email: ${email} <br/> Message:${message}`,
-//   }).then((message) => alert('Mail sent successfully'));
-// }
+  sendEmail(name, email, message);
+}
+
+function sendEmail(name, email, message) {
+  Email.send({
+    Host: 'smtp.gmail.com',
+    Username: 'stephenadebayo17@gmail.com',
+    Password: 'steve1234567890S',
+    To: 'stephenadebayo17@gmail.com',
+    From: 'stephenadebayo17@gmail.com',
+    Subject: `${name} sent you a message`,
+    Body: `Name:${name} <br/> Email: ${email} <br/> Message:${message}`,
+  }).then((message) => alert('Mail sent successfully'));
+}
