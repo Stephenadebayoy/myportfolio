@@ -757,9 +757,9 @@ strong {
 .swiper-button-prev {
   left: -0.5rem;
 }
-.slides {
-  /* margin-top: 2rem; */
-}
+/* .slides {
+   margin-top: 2rem;
+} */
 .swiper-button-next {
   right: -0.5rem;
 }
