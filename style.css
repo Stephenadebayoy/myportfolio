@@ -248,6 +248,10 @@ img {
   color: red;
 
 } */
+
+/* .pro__content {
+  border: 1px solid grey;
+} */
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
@@ -784,6 +788,7 @@ strong {
 .pro__img {
   padding: 2rem 0;
   opacity: 0.5;
+  max-width: 15rem;
 }
 .pro__img:hover {
   opacity: 1;
@@ -791,17 +796,23 @@ strong {
 .pro__client {
   color: gray;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .uil {
   font-size: 1.5rem;
   color: var(--first);
 }
-
+.pro__data {
+  display: flex;
+  flex-direction: column;
+}
+.pro__content {
+  order: 1;
+}
 .pro__icon {
   animation: App-logo-spin infinite 20s linear;
   font-size: 2.5rem;
+  margin-left: 5rem;
 }
 
 @keyframes App-logo-spin {
@@ -832,6 +843,7 @@ strong {
   background-color: var(--first-secondcolor);
   padding-top: 3rem;
   height: 26rem;
+  text-align: center;
 }
 .project__title {
   margin-bottom: var(--mb-0-75);
@@ -936,6 +948,9 @@ strong {
 .footer__social {
   color: #fff;
 }
+.media {
+  color: white;
+}
 
 .scrollup {
   position: fixed;
@@ -1011,6 +1026,10 @@ media query */
   .project__img {
     width: 200px;
   }
+  .pro__client {
+    justify-content: space-between;
+  }
+
   .pro__img {
     opacity: 0.5;
   }
@@ -1061,6 +1080,9 @@ media query */
   }
   .pro__img {
     opacity: 0.5;
+  }
+  .pro__i {
+    padding-left: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1203,15 +1225,9 @@ media query */
     margin-top: 4.5rem;
   }
   .pro__img {
-    width: 70%;
     opacity: 0.5;
   }
-  .pro__content {
-    display: flex;
-  }
-  .pro__description {
-    width: 90%;
-  }
+
   .pro__name {
     display: flex;
 
@@ -1272,27 +1288,23 @@ media query */
   .footer__bg {
     border: 2rem;
   }
-  .pro__img {
-    width: 70%;
+
+  .pro__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .pro__content {
-    display: flex;
-  }
+
   .pro__description {
     width: 70%;
   }
-  .pro__name {
-    display: flex;
-    margin-left: 5rem;
-    padding: 1rem 0;
+  .pro__all {
+    text-align: center;
   }
   .pro__icon {
-    margin-right: 5rem;
+    margin-right: 20rem;
     gap: none;
   }
-  .pro__client {
-    margin-right: 10rem;
-  }
+
   .footer__link {
     margin: 4rem;
   }
