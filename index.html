@@ -61,10 +61,13 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
           
   </head>
-  <body>
-       <div id="preloader" class="center">
-        <img src="./base.jpg" alt="" srcset="">
-       </div> 
+  <body onload="removeLoader();">
+     
+
+       <div class="spinner-container" id="preloader">
+	<div class="spinner"><h3>Loading...</h3></div>
+  
+</div>
       <header class="header" id="header"> 
        <nav class="nav container">
         <a href="#" class="nav__logo stroke-text">Stephanos</a>
@@ -851,19 +854,28 @@ qualification -->
       });
     </script>
     <script>
-      var loader = document.getElementById('preloader');
+
+      function removeLoader(){
+        setTimeout(()=>{
+          let preloader=document.getElementById("preloader")
+
+          preloader.style="display:none"
+
+        },4000)
+      }
+      // var loader = document.getElementById('preloader');
      
 
-      window.addEventListener('load', function () {
-         setTimeout(()=>{
-         loader.style.display = 'none';
-      },2500)
+      // window.addEventListener('load', function () {
+      //    setTimeout(()=>{
+      //    loader.style.display = 'none';
+      // },2500)
      
 
       // setTimeout(function(){
       // clearInterval(loader)
       // },5000)
-});
+// });
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scri.js"></script>
