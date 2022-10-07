@@ -104,12 +104,10 @@ body.dark-theme {
   right: 0;
 }
 .page {
-  margin-bottom: 19rem;
-  color: blue;
+  margin-bottom: 11rem;
+  color: snow;
 }
-.dot {
-  color: #0012e4;
-}
+
 .spinner {
   top: 2rem;
   bottom: 0;
@@ -130,10 +128,10 @@ body.dark-theme {
 
 @keyframes bounce {
   from {
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -10px, 0);
   }
   to {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 10px, 0);
   }
 }
 
