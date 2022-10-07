@@ -100,6 +100,7 @@ body.dark-theme {
   background: rgb(37, 34, 34);
   position: fixed;
   display: flex;
+  margin: 0;
 }
 .spinner {
   top: 2rem;
