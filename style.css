@@ -103,6 +103,9 @@ body.dark-theme {
   left: 0;
   right: 0;
 }
+.page {
+  margin-bottom: 18rem;
+}
 .spinner {
   top: 2rem;
   bottom: 0;
