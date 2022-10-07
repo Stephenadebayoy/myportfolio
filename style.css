@@ -103,10 +103,13 @@ body.dark-theme {
   left: 0;
   right: 0;
 }
-/* .page {
-  margin-bottom: 18rem;
+.page {
+  margin-bottom: 19rem;
   color: blue;
-} */
+}
+.dot {
+  color: #0012e4;
+}
 .spinner {
   top: 2rem;
   bottom: 0;
