@@ -120,7 +120,7 @@ body.dark-theme {
   border-radius: 50%;
   position: absolute;
   transform: rotate(90deg);
-  animation: bounce 0.5s;
+  animation: bounce 0.1s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-iteration-count: infinite;
